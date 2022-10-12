@@ -1,0 +1,24 @@
+Source: libtest-utf8-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 12)
+Build-Depends-Indep: perl
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtest-utf8-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtest-utf8-perl.git
+Homepage: https://metacpan.org/release/Test-utf8
+Rules-Requires-Root: no
+
+Package: libtest-utf8-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends}
+Description: handy perl module for testing strings with utf8
+ Test::utf8 is a collection of tests that's useful when dealing with utf8
+ strings in Perl. The Test::utf8 module provides two type of tests:
+ .
+  - validity test if a string is valid and not corrupt
+  - characteristics tests will check a string has a given set of characteristics
